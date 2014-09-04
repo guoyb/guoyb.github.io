@@ -15,19 +15,116 @@
         <script src="guoyb/bootstrap/js/bootstrap.min.js"></script>
         <script src="guoyb/js/docs.min.js"></script>
         <script src="guoyb/js/ie10-viewport-bug-workaround.js"></script>
+        <script>
+            function zhuye(){
+                window.location.hash="#zhuyediv";
+                $("#zhuyea").attr("class","blog-nav-item active");
+                $("#bokea").attr("class","blog-nav-item");
+                $("#bianchenga").attr("class","blog-nav-item");
+                $("#yundonga").attr("class","blog-nav-item");
+                $("#dushua").attr("class","blog-nav-item");
+                $("#shenghuoa").attr("class","blog-nav-item");
+                $("#yulea").attr("class","blog-nav-item");
+                $("#guanyua").attr("class","blog-nav-item");
+            }
+
+            function boke(){
+                window.location.hash="#bokediv";
+                $("#zhuyea").attr("class","blog-nav-item");
+                $("#bokea").attr("class","blog-nav-item active");
+                $("#bianchenga").attr("class","blog-nav-item");
+                $("#yundonga").attr("class","blog-nav-item");
+                $("#dushua").attr("class","blog-nav-item");
+                $("#shenghuoa").attr("class","blog-nav-item");
+                $("#yulea").attr("class","blog-nav-item");
+                $("#guanyua").attr("class","blog-nav-item");
+            }
+
+            function biancheng(){
+                window.location.hash="#bianchengdiv";
+                $("#zhuyea").attr("class","blog-nav-item");
+                $("#bokea").attr("class","blog-nav-item");
+                $("#bianchenga").attr("class","blog-nav-item active");
+                $("#yundonga").attr("class","blog-nav-item");
+                $("#dushua").attr("class","blog-nav-item");
+                $("#shenghuoa").attr("class","blog-nav-item");
+                $("#yulea").attr("class","blog-nav-item");
+                $("#guanyua").attr("class","blog-nav-item");
+            }
+
+            function yundong(){
+                window.location.hash="#yundongdiv";
+                $("#zhuyea").attr("class","blog-nav-item");
+                $("#bokea").attr("class","blog-nav-item");
+                $("#bianchenga").attr("class","blog-nav-item");
+                $("#yundonga").attr("class","blog-nav-item active");
+                $("#dushua").attr("class","blog-nav-item");
+                $("#shenghuoa").attr("class","blog-nav-item");
+                $("#yulea").attr("class","blog-nav-item");
+                $("#guanyua").attr("class","blog-nav-item");
+            }
+
+            function dushu(){
+                window.location.hash="#dushudiv";
+                $("#zhuyea").attr("class","blog-nav-item");
+                $("#bokea").attr("class","blog-nav-item");
+                $("#bianchenga").attr("class","blog-nav-item");
+                $("#yundonga").attr("class","blog-nav-item");
+                $("#dushua").attr("class","blog-nav-item active");
+                $("#shenghuoa").attr("class","blog-nav-item");
+                $("#yulea").attr("class","blog-nav-item");
+                $("#guanyua").attr("class","blog-nav-item");
+            }
+
+            function shenghuo(){
+                window.location.hash="#shenghuodiv";
+                $("#zhuyea").attr("class","blog-nav-item");
+                $("#bokea").attr("class","blog-nav-item");
+                $("#bianchenga").attr("class","blog-nav-item");
+                $("#yundonga").attr("class","blog-nav-item");
+                $("#dushua").attr("class","blog-nav-item");
+                $("#shenghuoa").attr("class","blog-nav-item active");
+                $("#yulea").attr("class","blog-nav-item");
+                $("#guanyua").attr("class","blog-nav-item");
+            }
+
+            function yule(){
+                window.location.hash="#yulediv";
+                $("#zhuyea").attr("class","blog-nav-item");
+                $("#bokea").attr("class","blog-nav-item");
+                $("#bianchenga").attr("class","blog-nav-item");
+                $("#yundonga").attr("class","blog-nav-item");
+                $("#dushua").attr("class","blog-nav-item");
+                $("#shenghuoa").attr("class","blog-nav-item");
+                $("#yulea").attr("class","blog-nav-item active");
+                $("#guanyua").attr("class","blog-nav-item");
+            }
+
+            function guanyu(){
+                window.location.hash="#guanyudiv";
+                $("#zhuyea").attr("class","blog-nav-item");
+                $("#bokea").attr("class","blog-nav-item");
+                $("#bianchenga").attr("class","blog-nav-item");
+                $("#yundonga").attr("class","blog-nav-item");
+                $("#dushua").attr("class","blog-nav-item");
+                $("#shenghuoa").attr("class","blog-nav-item");
+                $("#yulea").attr("class","blog-nav-item");
+                $("#guanyua").attr("class","blog-nav-item active");
+            }
+        </script>
     </head>
     <body>
-        <div class="blog-masthead">
+        <div id="zhuyediv" class="blog-masthead">
             <div class="container">
                 <nav class="blog-nav">
-                    <a class="blog-nav-item active" href="http://guoyb.github.io">主页</a>
-                    <a class="blog-nav-item" href="#">博客</a>
-                    <a class="blog-nav-item" href="#">编程</a>
-                    <a class="blog-nav-item" href="#">运动</a>
-                    <a class="blog-nav-item" href="#">读书</a>
-                    <a class="blog-nav-item" href="#">生活</a>
-                    <a class="blog-nav-item" href="#">娱乐</a>
-                    <a class="blog-nav-item" href="#">关于</a>
+                    <a id="zhuyea" class="blog-nav-item active" href="javascript:zhuye()">主页</a>
+                    <a id="bokea" class="blog-nav-item" href="javascript:boke()">博客</a>
+                    <a id="bianchenga" class="blog-nav-item" href="javascript:biancheng()">编程</a>
+                    <a id="yundonga" class="blog-nav-item" href="javascript:yundong()">运动</a>
+                    <a id="dushua" class="blog-nav-item" href="javascript:dushu()">读书</a>
+                    <a id="shenghuoa" class="blog-nav-item" href="javascript:shenghuo()">生活</a>
+                    <a id="yulea" class="blog-nav-item" href="javascript:yule()">娱乐</a>
+                    <a id="guanyua" class="blog-nav-item" href="javascript:guanyu()">关于</a>
                 </nav>
             </div>
         </div>
@@ -42,28 +139,28 @@
             <div class="row">
                 <div class="col-sm-8 blog-main">
 
-                    <div class="blog-post">
+                    <div id="bokediv" class="blog-post">
                         <h2 class="blog-post-title">博客</h2>
                         <p class="blog-post-meta">千里之行，始于足下！</p>
                         <p>记录下一点一滴，无论是工作上的还是生活上心情上的，坚持不懈，才能让小流汇聚成江海，让土丘堆积成高山！</p>
                         <hr>
                     </div>
 
-                    <div class="blog-post">
+                    <div id="bianchengdiv" class="blog-post">
                         <h2 class="blog-post-title">编程</h2>
                         <p class="blog-post-meta">钱压奴辈手，艺压当行人！</p>
                         <p>编程是一份工作，也是一门手艺，学习手艺没有捷径，靠的是信念，坚持，大智慧，只有十年如一日的坚持学习，加上一点运气，才能换来大成就，所有的小聪明，都是偷懒的借口！当兵的可以每天出操，唱戏的可以每天压腿喊嗓子，我们程序员也可以每天学习，沉迷其中，乐在其中。。。<p>
                         <hr>
                     </div><!-- /.blog-post -->
 
-                    <div class="blog-post">
+                    <div id="yundongdiv" class="blog-post">
                         <h2 class="blog-post-title">运动</h2>
                         <p class="blog-post-meta">天行健，君子以自强不息！</p>
 
                         <p>生命在于运动！正确的运动，能让人无论是在运动过程中，还是运动过后，都能感觉很舒服，能让人在身体上生理上，做到以前做不到的事，从而达到超越自我，再进一步，可以改变心里素质和整体的精神面貌！</p>
                     </div><!-- /.blog-post -->
 
-                    <div class="blog-post">
+                    <div id="dushudiv" class="blog-post">
                         <h2 class="blog-post-title">读书</h2>
                         <p class="blog-post-meta">宁静致远，养浩然之气！</p>
 
@@ -71,14 +168,14 @@
                         <hr>
                     </div><!-- /.blog-post -->
 
-                    <div class="blog-post">
+                    <div id="shenghuodiv" class="blog-post">
                         <h2 class="blog-post-title">生活</h2>
                         <p class="blog-post-meta">随心所欲，而不逾矩！</p>
                         <p>衣食住行，皆有规矩，不是古板，而是一旦形成健康习惯和节奏，整个人的生活状态和心情都会处于一种十分舒服的感觉中，有了自己的习惯，节奏，才是真正的潮流，而不是追求生活中的其它刺激。</p>
                         <hr>
                     </div>
 
-                    <div class="blog-post">
+                    <div id="yulediv" class="blog-post">
                         <h2 class="blog-post-title">娱乐</h2>
                         <p class="blog-post-meta">性之所至，只求痛快！</p>
                         <p>快乐的事情，希望能在对的时间发生。。。</p>
@@ -88,14 +185,16 @@
                 </div><!-- /.blog-main -->
 
                 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-                    <div class="sidebar-module sidebar-module-inset">
+                    <div id="guanyudiv" class="sidebar-module sidebar-module-inset">
                         <h4>关于</h4>
                         <p>感谢<a href="http://github.com" target="_blank"><em>Github</em></a>和<a href="http://http://www.bootcss.com/" target="_blank"><em>Bootstrap</em></a>对本博客的技术支持</p>
                     </div>
                     <div class="sidebar-module">
-                        <h4>个人档案</h4>
+                        <h4>个人博客</h4>
                         <ol class="list-unstyled">
                             <li><a href="#">2014年9月3日建立个人网站</a></li>
+                            <br/>
+                            <li><a href="#">更多>></a></li>
                         </ol>
                     </div>
                     <div class="sidebar-module">
