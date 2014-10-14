@@ -13,6 +13,37 @@
                 padding: 0;
             }
         </style>
+        <script>
+            $(document).on("pageinit","#pageone",function(){
+                $("#pageone").on("swipe",function(){
+                    window.location.href="#pagetwo";
+                });
+            });
+        </script>
+
+        <script>
+            $(document).on("pageinit","#pagetwo",function(){
+                $("#pagetwo").on("swipe",function(){
+                    window.location.href="#pagethree";
+                });
+            });
+        </script>
+
+        <script>
+            $(document).on("pageinit","#pagethree",function(){
+                $("#pagethree").on("swipe",function(){
+                    window.location.href="#pagefour";
+                });
+            });
+        </script>
+
+        <script>
+            $(document).on("pageinit","#pagefour",function(){
+                $("#pagefour").on("swipe",function(){
+                    window.location.href="#pageone";
+                });
+            });
+        </script>
     </head>
     <body>
         <div data-role="page" id="pageone">
