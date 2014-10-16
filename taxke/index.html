@@ -47,16 +47,19 @@
         </script>-->
         <script type="text/javascript">
             $(document).ready(function(){
-                $("#audio").play();
+                $("#audio1").play();
+                $("#audio2").play();
+                $("#audio3").play();
             });
 
         </script>
     </head>
     <body>
-        <audio id="audio" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
-            <source src="audio/1.mp3" type="audio/mpeg"/>
-            <source src="audio/2.ogg" type="audio/ogg"/>
-            <source src="audio/3.wav" type="audio/wav"/>
+        <audio src="audio/1.mp3" id="audio1" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
+        </audio>
+        <audio src="audio/2.ogg" id="audio2" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
+        </audio>
+        <audio src="audio/3.wav" id="audio3" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
         </audio>
         <div data-role="page" id="pageone">
             <a href="#pagetwo" data-transition="slideup"><img src="img/1.PNG"/></a>
