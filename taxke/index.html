@@ -1,90 +1,89 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>中翰税务</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
-        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-        <style>
-            html,body,div,a,img{
-                width: 100%;
-                height: 100%;
-                margin:0;
-                padding: 0;
-            }
-        </style>
-       <!-- <script>
-            $(document).on("pageinit","#pageone",function(){
-                $("#pageone").on("scrollstart",function(){
-                    window.location.href="#pagetwo";
-                });
-            });
-        </script>
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://www.dodoca.com/phone/websitey?id=22715 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>中翰招聘</title>
+    <meta name="Keywords" content="点点客微伙伴、微信营销、微信代运营、微信定制开发、微网站、微营销">
+    <meta name="Description" content="点点客微伙伴，国内最大的微信公众智能服务平台，点点客微伙伴十大功能体系：。">
 
-        <script>
-            $(document).on("pageinit","#pagetwo",function(){
-                $("#pagetwo").on("scrollstart",function(){
-                    window.location.href="#pagethree";
-                });
-            });
-        </script>
+    <!-- 移动设备支持 -->
 
-        <script>
-            $(document).on("pageinit","#pagethree",function(){
-                $("#pagethree").on("scrollstart",function(){
-                    window.location.href="#pagefour";
-                });
-            });
-        </script>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-        <script>
-            $(document).on("pageinit","#pagefour",function(){
-                $("#pagefour").on("scrollstart",function(){
-                    window.location.href="#pageone";
-                });
-            });
-        </script>-->
-        <!--<script type="text/javascript">
-            $(document).ready(function(){
-                $("embed,audio,object").play();
-               /* $("#audio1").play();
-                $("#audio2").play();
-                $("#audio3").play();*/
-            });
+    <link href="./中翰招聘_files/reset.css" rel="stylesheet" type="text/css">
+    <link href="./中翰招聘_files/mod.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./中翰招聘_files/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="./中翰招聘_files/wxsharejs.js"></script>
+    <script>
+        $(function() {
+            var shareTitle = '中翰招聘';
+            var imgUrl = 'http://pic.dodoca.com/org/5/98/add/8f6a/91b3b6cae37eda27a1ffe7.png';
+            var descContent = $("#div_fx_describe").text();
+            wx_share_out(shareTitle,imgUrl,descContent);
+        });
+    </script>
+    <style>
+        footer {display:block; position:fixed;bottom:0; width:100%; line-height:2.5;  color:#fff; font-size:12px; text-align:center; background-color:#333; z-index:100; opacity:0.6}
+        footer a { color:white; }
+    </style>
+</head>
+<body>
+<div style="display:none;" id="div_fx_describe">中翰：年轻人学习与发展的平台 欢迎加入中翰</div>
+<div class="p-index main" id="con" style="height: 838px;">
+    <canvas id="cas" width="640" height="838" class="noOp" style="display: none;"></canvas>  <!--上下滚动 start-->
 
-        </script>-->
-    </head>
-    <body>
-        <embed src="audio/1.mp3" autoplay="autoplay" type="application/thunder_download_plugin" height="0" width="0">
-        <audio src="audio/1.mp3" autoplay="autoplay" height="0" width="0"></audio>
-        <object height="100" autoplay="autoplay" width="100" data="/i/horse.mp3"></object>
-       <!-- <audio src="audio/1.mp3" id="audio1" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
-        </audio>
-        <audio src="audio/2.ogg" id="audio2" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
-        </audio>
-        <audio src="audio/3.wav" id="audio3" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
-        </audio>-->
-        <div data-role="page" id="pageone">
-            <a href="#pagetwo" data-transition="slideup"><img src="img/1.PNG"/></a>
-        </div>
-        <div data-role="page" id="pagetwo">
-            <a href="#pagethree" data-transition="slideup"><img src="img/2.PNG"/></a>
-        </div>
-        <div data-role="page" id="pagethree">
-            <a href="#pagefour" data-transition="slideup"><img src="img/3.PNG"/></a>
-        </div>
-        <div data-role="page" id="pagefour">
-            <a href="#pagefive" data-transition="slideup"><img src="img/4.PNG"/></a>
-        </div>
-        <div data-role="page" id="pagefive">
-            <a href="#pagesix" data-transition="slideup"><img src="img/5.PNG"/></a>
-        </div>
-        <div data-role="page" id="pagesix">
-            <a href="#pageseven" data-transition="slideup"><img src="img/6.PNG"/></a>
-        </div>
-        <div data-role="page" id="pageseven">
-            <a href="#pageone" data-transition="slideup"><img src="img/7.PNG"/></a>
-        </div>
-    </body>
-</html>
+    <section class="m-page hide" style="">
+        <div class="m-img"><a href="javascript:;"><img src="./中翰招聘_files/028d383f8f6316b540428e.png"></a></div>
+    </section>
+
+    <section class="m-page show" style="">
+        <div class="m-img"><a href="javascript:;"><img src="./中翰招聘_files/67043e0718c4ea7a134662.png"></a></div>
+    </section>
+
+    <section class="m-page hide" style="">
+        <div class="m-img"><a href="javascript:;"><img src="./中翰招聘_files/89c2db74688623cfe6ea90.jpg"></a></div>
+    </section>
+
+    <section class="m-page hide" style="">
+        <div class="m-img"><a href="javascript:;"><img src="./中翰招聘_files/be49cf866d9e8c86c49257.png"></a></div>
+    </section>
+
+    <section class="m-page hide" style="">
+        <div class="m-img"><a href="javascript:;"><img src="./中翰招聘_files/6d45152fa4a138d719e87b.png"></a></div>
+
+        <a href="http://m.dodoca.com/"><footer>©点点客技术支持</footer></a>
+
+    </section>
+
+    <section class="u-arrow" style="display: block;"><img src="./中翰招聘_files/btn01_arrow.png"></section>
+    <!--上下滚动代码 end-->
+</div>
+
+<!--音乐-->
+<div id="audio_btn" url="http://music.baidu.com/data/music" class="on" style="display: block;"><audio autoplay="autoplay" loop="loop" src="audio/1.mp3" id="media"></audio></div>
+<script>
+    var is_open = 'on';
+</script>
+<script type="text/javascript" src="./中翰招聘_files/music.js"></script>
+
+
+<script type="text/javascript" src="./中翰招聘_files/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./中翰招聘_files/page_scroll_bx.js"></script>
+
+<!--涂抹 start-->
+<script charset="utf-8" type="text/javascript">
+    daub_url= "http://pic.dodoca.com/org/5/98/add/8f6a/91b3b6cae37eda27a1ffe7.png?v=1.1650639545";
+</script>
+<script src="./中翰招聘_files/daub.js"></script>
+<!--涂抹 end-->
+
+
+
+
+<embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" height="0" width="0"></body></html>
