@@ -45,9 +45,12 @@
                 });
             });
         </script>-->
+        <script type="text/javascript">
+            $("#audio").play();
+        </script>
     </head>
     <body>
-        <audio controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
+        <audio id="audio" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
             <source src="audio/the%20lazy%20song.mp3" type="audio/mpeg"/>
             <source src="audio/the%20lazy%20song.ogg" type="audio/ogg"/>
             <source src="audio/the%20lazy%20song.wav" type="audio/wav"/>
