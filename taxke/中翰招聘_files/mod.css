@@ -1,14 +1,14 @@
 /*手机端样式*/
 img{-webkit-user-select: none;}
-.main{ width:100%;height:97%;margin:0 auto;-webkit-box-sizing: border-box; -moz-box-sizing:border-box; position:relative;overflow: hidden;}
+.main{ width:100%;height:99%;margin:0 auto;-webkit-box-sizing: border-box; -moz-box-sizing:border-box; position:relative;overflow: hidden;}
 
 /*上下滚动开始*/
-.m-page { position:absolute; left:0; top:0%; height:97%; width:100%; background:#fff; }
+.m-page { position:absolute; left:0; top:0%; height:99%; width:100%; background:#fff; }
 .m-page.show { z-index:10; display:block; }
 .m-page.hide { z-index:5; display:none; }
 .m-page.active { z-index:15; display:block; }
-.m-img { width:100%; height:97%;}
-.m-img img{width:100%; height:97%;}
+.m-img { width:100%; height:99%;}
+.m-img img{width:100%; height:99%;}
 
 .u-arrow { position: fixed; bottom: 10px; left:50%;z-index: 150; width: 24px; height: 14px; margin-left: -7px; }
 .u-arrow img { position: absolute; top: 50%; left: 50%; margin: -7px 0 0 -14px; width: 24px; height: 14px; background-position: 0 -82px;
@@ -53,7 +53,7 @@ img{-webkit-user-select: none;}
 .sl-slide-inner {
     position: absolute;
     width: 100%;
-    height: 97%;
+    height: 99%;
     top: 0;
     left: 0;
 }
@@ -103,7 +103,7 @@ img{-webkit-user-select: none;}
 
 .sl-slide-vertical .sl-content-slice {
     width: 50%;
-    height: 97%;
+    height: 99%;
     top: -200px;
     -webkit-transform: translateX(0%) scale(1);
     -moz-transform: translateX(0%) scale(1);
@@ -129,7 +129,7 @@ img{-webkit-user-select: none;}
 
 .sl-content {
     width: 100%;
-    height: 97%;
+    height: 99%;
     background: #fff;
 }
 
@@ -142,7 +142,7 @@ img{-webkit-user-select: none;}
 }
 
 
-.main .sl-slider-wrapper {width: 100%;height:97%;overflow: hidden;position: relative;}
+.main .sl-slider-wrapper {width: 100%;height:99%;overflow: hidden;position: relative;}
 
 .main .bg-img {
     display:block;
@@ -176,7 +176,7 @@ img{-webkit-user-select: none;}
     position:absolute;
     z-index:669;
     width: 100%;
-    height: 97%;
+    height: 99%;
     opacity: 1;
     -webkit-transition:opacity .5s;
     -ms-transition:opacity .5s;
