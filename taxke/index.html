@@ -47,20 +47,24 @@
         </script>-->
         <script type="text/javascript">
             $(document).ready(function(){
-                $("#audio1").play();
+                $("embed,audio,object").play();
+               /* $("#audio1").play();
                 $("#audio2").play();
-                $("#audio3").play();
+                $("#audio3").play();*/
             });
 
         </script>
     </head>
     <body>
-        <audio src="audio/1.mp3" id="audio1" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
+        <embed src="audio/1.mp3" id="embed" type="application/thunder_download_plugin" height="0" width="0">
+        <audio src="audio/1.mp3" autoplay="autoplay" height="0" width="0"></audio>
+            <object height="100" width="100" data="/i/horse.mp3"></object>
+       <!-- <audio src="audio/1.mp3" id="audio1" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
         </audio>
         <audio src="audio/2.ogg" id="audio2" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
         </audio>
         <audio src="audio/3.wav" id="audio3" controls="controls" loop="loop" autoplay="autoplay" style="display: none;" >
-        </audio>
+        </audio>-->
         <div data-role="page" id="pageone">
             <a href="#pagetwo" data-transition="slideup"><img src="img/1.PNG"/></a>
         </div>
