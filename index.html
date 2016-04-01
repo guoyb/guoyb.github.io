@@ -15,14 +15,7 @@
         <script src="guoyb/bootstrap/js/bootstrap.min.js"></script>
         <script src="guoyb/js/docs.min.js"></script>
         <script src="guoyb/js/ie10-viewport-bug-workaround.js"></script>
-        <style>
-            body{
-                -webkit-transform: rotate(-3deg);
-                -moz-transform: rotate(-3deg);
-                -o-transform: rotate(-3deg);
-            	padding-top:20px;
-            }
-        </style>
+        
         <script>
             function zhuye(){
                 window.location.hash="#zhuyediv";
@@ -118,6 +111,39 @@
                 $("#shenghuoa").attr("class","blog-nav-item");
                 $("#yulea").attr("class","blog-nav-item");
                 $("#guanyua").attr("class","blog-nav-item active");
+            }
+            
+            function getNow(){
+                var myDate = new Date();
+                var nian=myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+                var yue = parseInt(myDate.getMonth())+1;       //获取当前月份(0-11,0代表1月)
+                var ri=parseInt(myDate.getDate());        //获取当前日(1-31)
+                var shi = parseInt(myDate.getHours());       //获取当前小时数(0-23)
+                var fen = parseInt(myDate.getMinutes());     //获取当前分钟数(0-59)
+                var miao = parseInt(myDate.getSeconds());     //获取当前秒数(0-59)
+                if(yue<10){
+                    yue="0"+yue;
+                }
+                if(ri<10){
+                    ri="0"+ri;
+                }
+                if(shi<10){
+                    shi="0"+shi;
+                }
+                if(fen<10){
+                    fen="0"+fen;
+                }
+                if(miao<10){
+                    miao="0"+miao;
+                }
+                return ""+nian+"-"+yue+"-"+ri+" "+shi+":"+fen+":"+miao;
+            }
+            
+            if(getNow().substring(5,10)=='04-01'){
+                $(body).css('-webkit-transform','rotate(-2deg)');
+                $(body).css('-moz-transform','rotate(-2deg)');
+                $(body).css('-o-transform','rotate(-2deg)');
+                $(body).css('padding-top','30px');
             }
         </script>
 
