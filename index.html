@@ -248,12 +248,14 @@
                 return ""+nian+"-"+yue+"-"+ri+" "+shi+":"+fen+":"+miao;
             }
             
-            if(getNow().substring(5,10).equals('04-01')){
-                $(body).css('-webkit-transform','rotate(-2deg)');
-                $(body).css('-moz-transform','rotate(-2deg)');
-                $(body).css('-o-transform','rotate(-2deg)');
-                $(body).css('padding-top','30px');
-            }
+            <script>
+                if(getNow().substring(5,10)=='04-01'){
+                    $("body").css('-webkit-transform','rotate(-2deg)');
+                    $("body").css('-moz-transform','rotate(-2deg)');
+                    $("body").css('-o-transform','rotate(-2deg)');
+                    $("body").css('padding-top','30px');
+                }
+            </script>
         </script>
     </body>
 </html>
