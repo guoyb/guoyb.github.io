@@ -32,7 +32,7 @@
                     <!-- Header -->
                     <header id="header" style="padding-bottom: 0;margin-bottom: 0;">
                         <div class="logo">
-                            <a href="index.html">头部页面</a>
+                            <a id="time" href="javascript:void(0)"></a>
                         </div>
                     </header>
 
@@ -213,6 +213,23 @@
         <script src="assets/js/transition.js"></script>
         <script src="assets/js/owl-carousel.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script type="text/javascript">
+            function time(){
+                var vWeek,vWeek_s,vDay;
+                vWeek = ["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
+                var date =  new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                hours = date.getHours();
+                minutes = date.getMinutes();
+                seconds = date.getSeconds();
+                vWeek_s = date.getDay();
+                document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s] ;
+
+            };
+            setInterval("time()",1000);
+        </script>
     </body>
 
 </html>
