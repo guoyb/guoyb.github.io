@@ -263,10 +263,19 @@
                 month = date.getMonth() + 1;
                 day = date.getDate();
                 hours = date.getHours();
+                if (hours < 10) {
+                    hours = "0"+hours;
+                }
                 minutes = date.getMinutes();
+                if (minutes < 10) {
+                    minutes = "0"+minutes;
+                }
                 seconds = date.getSeconds();
+                if (seconds < 10) {
+                    seconds = "0"+seconds;
+                }
                 vWeek_s = date.getDay();
-                document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s] ;
+                document.getElementById("time").innerHTML = year + "-" + month + "-" + day + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s] ;
 
             };
             setInterval("time()",1000);
