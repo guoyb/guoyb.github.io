@@ -261,7 +261,13 @@
                 var date =  new Date();
                 year = date.getFullYear();
                 month = date.getMonth() + 1;
+                if (month < 10) {
+                    month = "0"+month;
+                }
                 day = date.getDate();
+                if (day < 10) {
+                    day = "0"+day;
+                }
                 hours = date.getHours();
                 if (hours < 10) {
                     hours = "0"+hours;
