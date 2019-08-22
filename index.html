@@ -125,7 +125,7 @@
                     seconds = "0"+seconds;
                 }
                 vWeek_s = date.getDay();
-                document.getElementById("time").innerHTML = year + "-" + month + "-" + day + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s] ;
+                document.getElementById("time").innerHTML = year + "-" + month + "-" + day + "\t" + hours + ":" + minutes +":" + seconds /*+ "\t" + vWeek[vWeek_s]*/ ;
 
             };
             setInterval("time()",1000);
