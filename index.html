@@ -99,6 +99,21 @@
         <script src="assets/js/owl-carousel.js"></script>
         <script src="assets/js/custom.js"></script>
         <script type="text/javascript">
+            function IsPC() {
+                var userAgentInfo = navigator.userAgent;
+                var Agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+                var flag = true;
+                for (var v = 0; v < Agents.length; v++) {
+                    if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                return flag;
+            }
+
             function time(){
                 var vWeek,vWeek_s,vDay;
                 vWeek = ["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
@@ -125,7 +140,11 @@
                     seconds = "0"+seconds;
                 }
                 vWeek_s = date.getDay();
-                document.getElementById("time").innerHTML = year + "-" + month + "-" + day + "\t" + hours + ":" + minutes +":" + seconds /*+ "\t" + vWeek[vWeek_s]*/ ;
+                if(IsPC()){
+                    document.getElementById("time").innerHTML = year + "-" + month + "-" + day + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s] ;
+                }else{
+                    document.getElementById("time").innerHTML = month + "-" + day + "\t" + hours + ":" + minutes;
+                }
 
             };
             setInterval("time()",1000);
